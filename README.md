@@ -1,5 +1,5 @@
-# WILANNs: Width Invariant Learning Artificial Neural Networks
-WILANNs is an open source PyTorch package that provides an alteration to the backpropagation algorithm, scaling pre-response activations instead of weight initializations, to achieve width invariance for the learning rate of a neural network architecture.
+# WILANNs: Width Invariant Learning Artificial Neural Networks (WIP- NOT READY FOR USE)
+WILANNs is an open source PyTorch package that provides an alteration to the backpropagation algorithm, scaling pre-response activations instead of weight initializations, to achieve width invariance for the learning rate of a neural network architecture. **The WILANN package is currently being built-out (features, testing, examples) before being published on PyPI, currently there are no guarantees of any part of this package working as intended**
 
 ## How it works
 The backpropagation algorithm updates the weights of a neural network based on the gradient of the loss function with respect to the weights. However, the learning rate at which the weights are updated can have a significant impact on the training process and the final performance of the network. A common issue with traditional backpropagation is that the learning rate may need to be adjusted based on the width (i.e., number of neurons) of the network, as wider networks may require a smaller learning rate to prevent divergence during training.
