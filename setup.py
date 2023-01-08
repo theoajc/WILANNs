@@ -2,17 +2,17 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='example_publish_pypi_medium',
-    version='0.6',
+    name='WILANNs',
+    version='0.1',
     license='MIT',
-    author="Giorgos Myrianthous",
-    author_email='email@example.com',
+    author="Theodore Clarke",
+    # author_email='email@example.com',
     packages=find_packages('src'),
     package_dir={'': 'src'},
-    url='https://github.com/gmyrianthous/example-publish-pypi',
+    url='https://github.com/theoajc/WILANNs',
     keywords='example project',
-    install_requires=[
-          'scikit-learn',
-      ],
+    # install_requires=[
+    #       'scikit-learn',
+    #   ],
 
 )
