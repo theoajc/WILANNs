@@ -32,17 +32,7 @@ class LinearWIL(nn.Linear):
         device=None,
         dtype=None,
     ) -> None:
-        super(LinearWIL, self).__init__()
-        self.in_features = in_features
-        self.out_features = out_features
-        self.weight = Parameter(
-            torch.empty((out_features, in_features), **factory_kwargs)
-        )
-        if bias:
-            self.bias = Parameter(torch.empty(out_features, **factory_kwargs))
-        else:
-            self.register_parameter("bias", None)
-        self.reset_parameters()
+        super(LinearWIL, self).__init__(in_features, out_features, bias, device, dtype)
 
     def reset_parameters(self) -> None:
         # The same as PyTorch's regular kaiming_uniform without scaling
